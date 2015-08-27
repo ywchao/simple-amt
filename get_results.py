@@ -17,6 +17,8 @@ def process_assignments(mtc, hit_id):
         'assignment_id': a.AssignmentId,
         'hit_id': hit_id,
         'worker_id': a.WorkerId,
+        'accept_time': a.AcceptTime,
+        'submit_time': a.SubmitTime,
         'output': json.loads(a.answers[0][0].fields[0]),
       })
   return results

@@ -31,6 +31,9 @@ def get_parent_parser():
                       default=True,
                       help="Whether to run on the production AMT site.")
   parser.add_argument('--hit_ids_file')
+  parser.add_argument('--reject_file')
+  parser.add_argument('--reject_only', default=False)
+  parser.add_argument('--auto_mode', default=False)
   parser.add_argument('--config', default='config.json',
                       type=json_file)
   return parser
